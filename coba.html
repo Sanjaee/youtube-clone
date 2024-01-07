@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding-bottom: 1000px;
+      }
+      .container {
+        color: rgb(98, 93, 93);
+        display: grid;
+        grid-template-columns: 100px 100px;
+      }
+      .container2 {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+      .video-container {
+        position: absolute;
+        width: 640px;
+        height: 360px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="background-color: aqua">div 1</div>
+      <div style="background-color: chartreuse">
+        div 2
+        <p>paragraph</p>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div style="background-color: aqua; height: 200px">1fr</div>
+      <div style="background-color: chartreuse; height: 200px">1fr</div>
+      <div style="background-color: aqua; height: 200px">1fr</div>
+      <div style="background-color: chartreuse; height: 200px">1fr</div>
+      <div style="background-color: aqua; height: 200px">1fr</div>
+      <div style="background-color: chartreuse; height: 200px">1fr</div>
+    </div>
+    <div class="video-container">
+      <!-- Video Player di sini -->
+
+      <!-- Tombol play di atas video -->
+      <button class="play-button">Play</button>
+    </div>
+  </body>
+</html>
